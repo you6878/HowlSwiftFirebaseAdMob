@@ -12,6 +12,8 @@
 		023657791F2A0B61002F0B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 023657771F2A0B61002F0B11 /* Main.storyboard */; };
 		0236577B1F2A0B61002F0B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0236577A1F2A0B61002F0B11 /* Assets.xcassets */; };
 		0236577E1F2A0B61002F0B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0236577C1F2A0B61002F0B11 /* LaunchScreen.storyboard */; };
+		023657861F2A0C73002F0B11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 023657851F2A0C73002F0B11 /* GoogleService-Info.plist */; };
+		6BF9A9F22D97B6AAB5E4991F /* Pods_howladmob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8D358051D02CCCAB987CA6 /* Pods_howladmob.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0236577A1F2A0B61002F0B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0236577D1F2A0B61002F0B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0236577F1F2A0B61002F0B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		023657851F2A0C73002F0B11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56AD3F58056C04E55856DFAA /* Pods-howladmob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howladmob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-howladmob/Pods-howladmob.debug.xcconfig"; sourceTree = "<group>"; };
+		6C8D358051D02CCCAB987CA6 /* Pods_howladmob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howladmob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD32F121488FD5C2BD462E88 /* Pods-howladmob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howladmob.release.xcconfig"; path = "Pods/Target Support Files/Pods-howladmob/Pods-howladmob.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF9A9F22D97B6AAB5E4991F /* Pods_howladmob.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				023657721F2A0B61002F0B11 /* howladmob */,
 				023657711F2A0B61002F0B11 /* Products */,
+				2A58606353CAD66DB38D0E18 /* Pods */,
+				DEA5D1DF5B2E51FAF77E1FB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				0236577A1F2A0B61002F0B11 /* Assets.xcassets */,
 				0236577C1F2A0B61002F0B11 /* LaunchScreen.storyboard */,
 				0236577F1F2A0B61002F0B11 /* Info.plist */,
+				023657851F2A0C73002F0B11 /* GoogleService-Info.plist */,
 			);
 			path = howladmob;
+			sourceTree = "<group>";
+		};
+		2A58606353CAD66DB38D0E18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56AD3F58056C04E55856DFAA /* Pods-howladmob.debug.xcconfig */,
+				BD32F121488FD5C2BD462E88 /* Pods-howladmob.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEA5D1DF5B2E51FAF77E1FB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C8D358051D02CCCAB987CA6 /* Pods_howladmob.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 023657821F2A0B61002F0B11 /* Build configuration list for PBXNativeTarget "howladmob" */;
 			buildPhases = (
+				BA11F9869818D1F296A598B1 /* [CP] Check Pods Manifest.lock */,
 				0236576C1F2A0B61002F0B11 /* Sources */,
 				0236576D1F2A0B61002F0B11 /* Frameworks */,
 				0236576E1F2A0B61002F0B11 /* Resources */,
+				049CB6415D12ED0DB2D490F3 /* [CP] Embed Pods Frameworks */,
+				523BCF43217FE26FC801F4CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				0236577E1F2A0B61002F0B11 /* LaunchScreen.storyboard in Resources */,
+				023657861F2A0C73002F0B11 /* GoogleService-Info.plist in Resources */,
 				0236577B1F2A0B61002F0B11 /* Assets.xcassets in Resources */,
 				023657791F2A0B61002F0B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		049CB6415D12ED0DB2D490F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-howladmob/Pods-howladmob-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		523BCF43217FE26FC801F4CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-howladmob/Pods-howladmob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA11F9869818D1F296A598B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0236576C1F2A0B61002F0B11 /* Sources */ = {
@@ -258,6 +337,7 @@
 		};
 		023657831F2A0B61002F0B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56AD3F58056C04E55856DFAA /* Pods-howladmob.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = howladmob/Info.plist;
@@ -270,6 +350,7 @@
 		};
 		023657841F2A0B61002F0B11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD32F121488FD5C2BD462E88 /* Pods-howladmob.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = howladmob/Info.plist;
@@ -299,6 +380,7 @@
 				023657841F2A0B61002F0B11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
